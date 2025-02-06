@@ -1,0 +1,83 @@
+.contact-container {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  display: flex;
+  gap: 40px;
+}
+
+.contact-info {
+  flex: 1;
+  padding: 20px;
+}
+
+.contact-form {
+  flex: 1;
+  padding: 20px;
+}
+
+h2 {
+  color: #00c8a8;
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+
+.info-item {
+  margin-bottom: 25px;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+}
+
+.info-item h3 {
+  color: #00c8a8;
+  margin-bottom: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+input, textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.submit-btn {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 25px;
+  background-color: #00c8a8;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  align-self: flex-start;
+}
+
+.submit-btn:hover {
+  background-color: #00a890;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+      flex-direction: column;
+      margin: 30px 15px;
+  }
+}
