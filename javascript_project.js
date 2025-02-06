@@ -33,8 +33,6 @@ const mockDestinations = {
 };
 
 async function handleSearch() {
-    console.log("hello");
-    
   const searchInput = document.getElementById("searchInput");
   const query = searchInput.value.trim().toLowerCase();
 
@@ -74,21 +72,6 @@ async function handleSearch() {
   }
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-  // Existing navbar loading code
-  const navbarPlaceholder = document.getElementById("navbar");
-  if (navbarPlaceholder) {
-    fetch("/navbar/navbar.html")
-      .then((response) => response.text())
-      .then((data) => {
-        navbarPlaceholder.innerHTML = data;
-
-        // Re-attach event listeners after navbar loads
-        document
-          .getElementById("searchInput")
-          .addEventListener("keypress", function (e) {
-            if (e.key === "Enter") handleSearch();
-          });
-      });
-  }
-});
+function handleClear() {
+  document.getElementById("searchInput").value = "";
+}
