@@ -16,8 +16,8 @@ document.addEventListener("DOMContentLoaded", function () {
               placeholder="Destination or keyword"
               id="searchInput"
             />
-            <button class="search-btn" onclick="handleSearch()">Search</button>
-            <button class="clear-btn" onclick="handleClear()">Clear</button>
+            <button class="search-btn" onclick=${handleSearch()}>Search</button>
+            <button class="clear-btn" onclick=${handleClear()}>Clear</button>
           </div>
         </nav>
     `;
