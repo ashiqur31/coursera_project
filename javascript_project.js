@@ -5,9 +5,9 @@ document.addEventListener("DOMContentLoaded", function () {
         <nav>
           <div class="logo">TravelBloom</div>
           <div class="nav-links">
-            <a href="/index.html">Home</a>
-            <a href="/about/about.html">About Us</a>
-            <a href="/contact/contact.html">Contact Us</a>
+            <a href="/coursera_project/index.html">Home</a>
+            <a href="/coursera_project/about/about.html">About Us</a>
+            <a href="/coursera_project/contact/contact.html">Contact Us</a>
           </div>
           <div class="search-container">
             <input
