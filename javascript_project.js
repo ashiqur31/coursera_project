@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   if (navbarPlaceholder) {
     navbarPlaceholder.innerHTML = `
         <nav>
-          <div class="logo"><img src="/images/logo.png" /> TravelBloom</div>
+          <div class="logo">TravelBloom</div>
           <div class="nav-links">
             <a href="/index.html">Home</a>
             <a href="/about/about.html">About Us</a>
