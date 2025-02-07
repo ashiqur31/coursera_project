@@ -1,11 +1,26 @@
 document.addEventListener("DOMContentLoaded", function () {
   const navbarPlaceholder = document.getElementById("navbar");
   if (navbarPlaceholder) {
-    fetch("/navbar.html")
-      .then((response) => response.text())
-      .then((data) => {
-        navbarPlaceholder.innerHTML = data;
-      });
+    navbarPlaceholder.innerHTML = `
+        <nav>
+          <div class="logo"><img src="/images/logo.png" /> TravelBloom</div>
+          <div class="nav-links">
+            <a href="/index.html">Home</a>
+            <a href="/about/about.html">About Us</a>
+            <a href="/contact/contact.html">Contact Us</a>
+          </div>
+          <div class="search-container">
+            <input
+              type="text"
+              class="search-input"
+              placeholder="Destination or keyword"
+              id="searchInput"
+            />
+            <button class="search-btn" onclick="handleSearch()">Search</button>
+            <button class="clear-btn" onclick="handleClear()">Clear</button>
+          </div>
+        </nav>
+    `;
   }
 });
 
@@ -39,7 +54,6 @@ async function handleSearch() {
   if (!query) return;
 
   try {
-
     // Display results
     const resultsHTML = `
             <div class="search-results">
